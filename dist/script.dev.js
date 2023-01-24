@@ -1,7 +1,7 @@
 "use strict";
 
 // English to Morse Code Object
-var morseCode = {
+var engToMorse = {
   A: '.-',
   B: '-...',
   C: '-.-.',
@@ -40,6 +40,6 @@ engTranslation = document.getElementById("english-translation"); // Translate
 
 morseTranslateBtn.addEventListener("click", function () {
   morseTranslation.innerHTML = inputEnglish.value.toUpperCase().split("").map(function (el) {
-    return morseCode[el] ? morseCode[el] : el;
+    return engToMorse[el] ? engToMorse[el] : el;
   }).join("");
 });

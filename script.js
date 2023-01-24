@@ -1,5 +1,5 @@
 // English to Morse Code Object
-const morseCode = {
+const engToMorse = {
     A : '.-',
     B : '-...',
     C : '-.-.',
@@ -29,7 +29,6 @@ const morseCode = {
     " ": "/"
 };
 
-
 // Grab my elements
 
 inputEnglish = document.getElementById("english-input");
@@ -44,6 +43,6 @@ engTranslation = document.getElementById("english-translation");
 
 morseTranslateBtn.addEventListener("click", () => {
     morseTranslation.innerHTML = inputEnglish.value.toUpperCase().split("").map(el => {
-        return morseCode[el] ? morseCode[el] : el;
+        return engToMorse[el] ? engToMorse[el] : el;
     }).join("");
 });
