@@ -36,5 +36,5 @@ translateBtn = document.getElementById("button");
 translation = document.getElementById("translation"); // Translate
 
 translateBtn.addEventListener("click", function () {
-  translation.innerHTML = inputEnglish.value.toUpperCase();
+  translation.innerHTML = inputEnglish.value.toUpperCase().split("");
 });
