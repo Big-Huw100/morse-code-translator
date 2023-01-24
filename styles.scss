@@ -1,0 +1,59 @@
+$font-body: Helvetica, sans-serif;
+
+$color-primary: #31AEC8;
+$color-secondary: #1B1A1D;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-body;
+    color: white;
+}
+
+body {
+    background-color: $color-secondary;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.heading {
+    font-size: 80px;
+    background-color: $color-primary;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-heading {
+    font-size: 40px;
+    margin: 10px;
+}
+
+#english-input {
+    height: 30px;
+    width: 700px;
+    font-size: 20px;
+}
+
+#morse-button {
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+    background-color: #78B1BB;
+}
+
+p {
+    font-size: 30px;
+}

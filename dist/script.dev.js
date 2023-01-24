@@ -38,7 +38,8 @@ inputMorse = document.getElementById("morse-input");
 engTranslateBtn = document.getElementById("english-button");
 engTranslation = document.getElementById("english-translation"); // Translate
 
-morseTranslateBtn.addEventListener("click", function () {
+morseTranslateBtn.addEventListener("click", function (event) {
+  event.preventDefault();
   morseTranslation.innerHTML = inputEnglish.value.toUpperCase().split("").map(function (el) {
     return engToMorse[el] ? engToMorse[el] : el;
   }).join("");

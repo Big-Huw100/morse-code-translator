@@ -41,7 +41,8 @@ engTranslation = document.getElementById("english-translation");
 
 // Translate
 
-morseTranslateBtn.addEventListener("click", () => {
+morseTranslateBtn.addEventListener("click", (event) => {
+    event.preventDefault();
     morseTranslation.innerHTML = inputEnglish.value.toUpperCase().split("").map(el => {
         return engToMorse[el] ? engToMorse[el] : el;
     }).join("");
