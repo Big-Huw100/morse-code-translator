@@ -31,9 +31,9 @@ var morseCode = {
   " ": "/"
 }; // Grab my elements
 
-inputEnglish = document.getElementById("input");
-translateBtn = document.getElementById("button");
-translation = document.getElementById("translation"); // Translate
+inputEnglish = document.getElementById("english-input");
+translateBtn = document.getElementById("morse-button");
+translation = document.getElementById("morse-translation"); // Translate
 
 translateBtn.addEventListener("click", function () {
   translation.innerHTML = inputEnglish.value.toUpperCase().split("").map(function (el) {
