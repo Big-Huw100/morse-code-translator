@@ -32,11 +32,14 @@ var morseCode = {
 }; // Grab my elements
 
 inputEnglish = document.getElementById("english-input");
-translateBtn = document.getElementById("morse-button");
-translation = document.getElementById("morse-translation"); // Translate
+morseTranslateBtn = document.getElementById("morse-button");
+morseTranslation = document.getElementById("morse-translation");
+inputMorse = document.getElementById("morse-input");
+engTranslateBtn = document.getElementById("english-button");
+engTranslation = document.getElementById("english-translation"); // Translate
 
-translateBtn.addEventListener("click", function () {
-  translation.innerHTML = inputEnglish.value.toUpperCase().split("").map(function (el) {
+morseTranslateBtn.addEventListener("click", function () {
+  morseTranslation.innerHTML = inputEnglish.value.toUpperCase().split("").map(function (el) {
     return morseCode[el] ? morseCode[el] : el;
   }).join("");
 });

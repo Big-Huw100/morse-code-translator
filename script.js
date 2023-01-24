@@ -27,19 +27,23 @@ const morseCode = {
     Y : '-.--',
     Z : '--..',
     " ": "/"
- };
+};
 
 
- // Grab my elements
+// Grab my elements
 
 inputEnglish = document.getElementById("english-input");
-translateBtn = document.getElementById("morse-button");
-translation = document.getElementById("morse-translation");
+morseTranslateBtn = document.getElementById("morse-button");
+morseTranslation = document.getElementById("morse-translation");
+
+inputMorse = document.getElementById("morse-input");
+engTranslateBtn = document.getElementById("english-button");
+engTranslation = document.getElementById("english-translation");
 
 // Translate
 
-translateBtn.addEventListener("click", () => {
-    translation.innerHTML = inputEnglish.value.toUpperCase().split("").map(el => {
+morseTranslateBtn.addEventListener("click", () => {
+    morseTranslation.innerHTML = inputEnglish.value.toUpperCase().split("").map(el => {
         return morseCode[el] ? morseCode[el] : el;
     }).join("");
 });
