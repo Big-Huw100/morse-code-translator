@@ -40,6 +40,6 @@ translation = document.getElementById("translation");
 
 translateBtn.addEventListener("click", () => {
     translation.innerHTML = inputEnglish.value.toUpperCase().split("").map(el => {
-        returnmorseCode[el] ? morseCode[el] : el;
+        return morseCode[el] ? morseCode[el] : el;
     }).join("");
 });
