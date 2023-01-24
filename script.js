@@ -39,5 +39,7 @@ translation = document.getElementById("translation");
 // Translate
 
 translateBtn.addEventListener("click", () => {
-    translation.innerHTML = inputEnglish.value.toUpperCase().split("");
+    translation.innerHTML = inputEnglish.value.toUpperCase().split("").map(el => {
+        returnmorseCode[el] ? morseCode[el] : el;
+    }).join("");
 });
