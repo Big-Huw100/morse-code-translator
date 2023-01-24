@@ -33,4 +33,8 @@ var morseCode = {
 
 inputEnglish = document.getElementById("input");
 translateBtn = document.getElementById("button");
-translation = document.getElementById("translation");
+translation = document.getElementById("translation"); // Translate
+
+translateBtn.addEventListener("click", function () {
+  translation.innerHTML = inputEnglish.value.toUpperCase();
+});
