@@ -52,4 +52,9 @@ body {
 
 p {
   font-size: 30px;
+  margin-top: 20px;
+}
+
+#morse-translation {
+  font-size: 80px;
 }
