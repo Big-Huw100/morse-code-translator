@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #1B1A1D;
+  background-color: #1b1a1d;
 }
 
 .main {
@@ -25,7 +25,7 @@ body {
 
 .heading {
   font-size: 80px;
-  background-color: #31AEC8;
+  background-color: #31aec8;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ button {
   height: 30px;
   width: 100px;
   font-size: 18px;
-  background-color: #78B1BB;
+  background-color: #78b1bb;
 }
 
 p {
@@ -81,6 +81,14 @@ p {
 
   p {
     font-size: 25px;
+  }
+
+  #morse-translation {
+    font-size: 60px;
+  }
+
+  #english-translation {
+    font-size: 40px;
   }
 
   #disclaimer {
